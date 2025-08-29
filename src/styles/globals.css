@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+:root {
+  --z-base: 0;
+  --z-navbar: 100;
+  --z-overlay: 200;
+  --z-modal: 300;
+  --z-tooltip: 400;
+}
