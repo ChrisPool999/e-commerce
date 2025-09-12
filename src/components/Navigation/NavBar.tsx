@@ -1,5 +1,5 @@
-import HamburgerButton from "@components/HamburgerButton";
-import SearchBar from "@components/SearchBar";
+import HamburgerButton from "@/components/ui/HamburgerButton";
+import SearchBar from "@/components/Navigation/SearchBar";
 import ShoppingCart from "@mui/icons-material/ShoppingCart";
 
 export default function NavBar() {

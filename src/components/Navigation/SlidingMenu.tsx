@@ -2,8 +2,8 @@
 
 import { useMenu } from "@context/MenuContext";
 import React from "react";
-import { zIndex } from "@styles/zIndex";
-import ExitButton from "./ExitButton";
+import { zIndex } from "@/styles/z-index";
+import ExitButton from "@components/ui/ExitButton";
 
 interface SlidingMenuProps {
   IdName?: string;

@@ -1,6 +1,6 @@
 "use client"
 
-import { zIndex } from "@/styles/zIndex";
+import { zIndex } from "@/styles/z-index";
 import { useMenu } from "@context/MenuContext";
 
 interface HamburgerButtonProps {
