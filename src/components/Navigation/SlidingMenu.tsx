@@ -14,7 +14,7 @@ interface SlidingMenuProps {
 }
 
 export default function SlidingMenu( {content, fromLeft=true, overlay=true, screenWidth="70"}: SlidingMenuProps ) {
-  const {menuId, isOpen, closeMenu} = useMenu();
+  const {menuId, isOpen} = useMenu();
 
   return (
     <nav>
@@ -32,9 +32,9 @@ export default function SlidingMenu( {content, fromLeft=true, overlay=true, scre
           {content}
       </div>
       
-      <div className={`overlay fixed inset-0 w-full h-full z-[10] bg-black transition-opacity duration-300 ease-in-out
-        ${isOpen ? "opacity-70" : "opacity-0"}`
-      }></div>
+      {overlay && <div className={`overlay fixed inset-0 w-full h-full z-[10] bg-black transition-opacity duration-300 ease-in-out cursor-pointer
+        ${isOpen ? "opacity-70" : "opacity-0 hidden"}`
+      }></div> }
     </nav>
   )
 }

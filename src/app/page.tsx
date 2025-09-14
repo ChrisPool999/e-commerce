@@ -3,7 +3,6 @@ import SlidingMenu from "@/components/Navigation/SlidingMenu"
 import ProductCard from "@/components/search/ProductCard";
 import { MenuProvider }  from "@/context/MenuContext"
 import { Product } from "@interfaces/product"
-import Image from "next/image";
 
 export default async function Page() {
   const res = await fetch("http://localhost:3001/products");
@@ -13,7 +12,13 @@ export default async function Page() {
     <MenuProvider menuId="nav-sliding-menu">
       <NavBar></NavBar>
       <SlidingMenu></SlidingMenu>
-      <ProductCard product={products[0]}></ProductCard>
+      <div className="flex">
+        <ProductCard product={products[0]}></ProductCard>
+        <ProductCard product={products[1]}></ProductCard>
+        <ProductCard product={products[2]}></ProductCard>
+        <ProductCard product={products[3]}></ProductCard>
+        <ProductCard product={products[4]}></ProductCard>
+      </div>
     </MenuProvider>
   )
 }
