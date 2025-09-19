@@ -1,8 +1,8 @@
-import HamburgerButton from "@/components/ui/HamburgerButton";
-import SearchBar from "@/components/Navigation/SearchBar";
+import { HamburgerButton } from "@/components/ui/HamburgerButton";
+import { SearchBar } from "@/components/Navigation/SearchBar";
 import ShoppingCart from "@mui/icons-material/ShoppingCart";
 
-export default function NavBar() {
+export function NavBar() {
 
   return (
     <nav className={`flex justify-between items-center w-full h-20 bg-black gap-20 z-[200]`}>

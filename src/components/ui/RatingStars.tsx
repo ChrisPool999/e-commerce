@@ -42,7 +42,7 @@ interface IRatingStarsProps {
   rating: number;
 };
 
-export default function RatingStars(props: IRatingStarsProps) {
+export function RatingStars(props: IRatingStarsProps) {
   const rounded = Math.round(props.rating * 2) / 2;
   const full = Math.floor(rounded);
   const half = (rounded != full ? 1 : 0);

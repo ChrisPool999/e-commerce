@@ -1,9 +1,9 @@
 "use client"
 
 import { useMenu } from "@context/MenuContext";
-import React from "react";
 import { zIndex } from "@/styles/z-index";
-import ExitButton from "@components/ui/ExitButton";
+import { ExitButton } from "@components/ui/ExitButton";
+import React from "react";
 
 interface SlidingMenuProps {
   IdName?: string;
@@ -13,7 +13,7 @@ interface SlidingMenuProps {
   content?: React.ReactNode; 
 }
 
-export default function SlidingMenu( {content, fromLeft=true, overlay=true, screenWidth="70"}: SlidingMenuProps ) {
+export function SlidingMenu( {content, fromLeft=true, overlay=true, screenWidth="70"}: SlidingMenuProps ) {
   const {menuId, isOpen} = useMenu();
 
   return (

@@ -1,6 +1,6 @@
-import NavBar from "@/components/Navigation/NavBar"
-import SlidingMenu from "@/components/Navigation/SlidingMenu"
-import ProductCard from "@/components/search/ProductCard";
+import { NavBar } from "@/components/Navigation/NavBar"
+import { SlidingMenu } from "@/components/Navigation/SlidingMenu"
+import { ProductCard } from "@/components/search/ProductCard";
 import { MenuProvider }  from "@/context/MenuContext"
 import { Product } from "@interfaces/product"
 

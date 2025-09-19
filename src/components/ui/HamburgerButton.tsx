@@ -10,7 +10,7 @@ interface HamburgerButtonProps {
   extraClass?: string;
 }
 
-export default function HamburgerButton( {sizeClass = "h-8 w-8", extraClass = ''}: HamburgerButtonProps ) {
+export function HamburgerButton( {sizeClass = "h-8 w-8", extraClass = ''}: HamburgerButtonProps ) {
   const {menuId, isOpen, openMenu} = useMenu();
 
   return ( 
